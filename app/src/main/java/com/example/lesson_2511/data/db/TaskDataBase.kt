@@ -8,7 +8,7 @@ import com.example.lesson_2511.data.db.model.TaskEntity
     entities = [
         TaskEntity::class,
     ],
-    version = 1
+    version = 2
 )
 abstract class TaskDataBase: RoomDatabase() {
 

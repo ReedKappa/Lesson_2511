@@ -2,6 +2,7 @@ package com.example.lesson_2511.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.lesson_2511.data.db.TaskState
 import com.example.lesson_2511.data.module.Task
 import com.example.lesson_2511.domain.UpsertTaskUseCase
 import kotlinx.coroutines.launch
@@ -16,6 +17,7 @@ class ModifyTaskViewModel@Inject constructor(
         description = "",
         startTime = -1,
         endTime = -1,
+        state = TaskState.TODO
     )
 
     fun validateForm(title: String, description: String): Boolean {

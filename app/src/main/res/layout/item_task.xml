@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/item_task_title"
+            app:layout_constraintEnd_toStartOf="@id/item_task_status"
             android:layout_marginBottom="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/item_task_start_time"
@@ -62,6 +63,14 @@
             app:layout_constraintStart_toEndOf="@id/item_task_time_separator"
             app:layout_constraintTop_toTopOf="@id/item_task_start_time"
             tools:text="25.11.2023 12:00" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/item_task_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="TODO"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
